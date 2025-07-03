@@ -210,13 +210,13 @@ O site é totalmente responsivo e funciona em:
 ### Servidor Local (Recomendado)
 ```bash
 # Usando Python
-python -m http.server 8000
+python -m http.server 3000
 
 # Usando Node.js
-npx serve .
+npx server .
 
 # Usando PHP
-php -S localhost:8000
+php -S localhost:3000
 ```
 
 ### Hospedagem Online
@@ -249,7 +249,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 📞 Suporte
 
 - **Instagram**: [@ofertasninja_jp](https://www.instagram.com/ofertasninja_jp/)
-- **Email**: [seu-email@exemplo.com]
+- **Email**: [rodrigo.guedes.f@gmail.com]
 - **Issues**: Use o GitHub Issues para reportar bugs
 
 ## 🎉 Agradecimentos
