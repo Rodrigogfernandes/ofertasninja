@@ -2,6 +2,47 @@
 
 Uma plataforma moderna e dinâmica para exibição de ofertas e produtos organizados por categorias, com painel de controle administrativo completo.
 
+## 🚀 Versão Final
+
+### Funcionalidades Principais
+- Exibição de produtos com imagem ou vídeo (mp4, webm, ogg) tanto nos cards quanto no modal de detalhes.
+- Painel de administração completo para gerenciar categorias, produtos, configurações do site, redes sociais e temas.
+- Suporte a múltiplos temas, incluindo tema rosa claro.
+- Filtros por categoria, backup/restauração, reset de dados e configurações de fábrica.
+- Layout responsivo, moderno e com efeitos visuais interativos.
+
+### Como Usar
+
+#### 1. Página Principal
+- Abra `index.html` no navegador.
+- Navegue pelas categorias no carrossel.
+- Clique em uma categoria para ver os produtos.
+- Produtos podem exibir imagem ou vídeo na listagem e no modal de detalhes.
+- Clique em um produto para ver detalhes completos e acessar o link da oferta.
+
+#### 2. Painel de Controle
+- Acesse `admin.html` para gerenciar o site.
+- Aba **Categorias**: crie, edite e exclua categorias.
+- Aba **Produtos**: adicione produtos com imagem ou vídeo (basta informar a URL de um arquivo .jpg, .png, .mp4, .webm, etc).
+- Aba **Configurações**:
+  - Edite título, avatar, favicon, redes sociais e tema do site.
+  - Faça backup/restauração dos dados.
+  - Limpe cache, resete dados ou restaure configurações de fábrica.
+
+#### 3. Personalização
+- As cores principais podem ser alteradas editando as variáveis CSS em `styles.css`.
+- Para adicionar novos temas, siga o padrão das variáveis em `:root`.
+- O campo de imagem do produto aceita tanto imagens quanto vídeos (exemplo: `https://exemplo.com/produto.mp4`).
+
+#### 4. Observações
+- O sistema é totalmente responsivo e funciona em desktop e mobile.
+- O cursor é personalizado em toda a interface.
+- O painel admin possui explicações para cada ação de manutenção.
+
+---
+
+**Projeto finalizado e pronto para uso!**
+
 ## ✨ Características Principais
 
 ### 🎯 Site Principal
