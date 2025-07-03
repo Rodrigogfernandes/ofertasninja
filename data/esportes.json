@@ -1,0 +1,67 @@
+{
+  "categoria": "Esportes",
+  "icone": "⚽",
+  "cor": "#4CAF50",
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Bola de Futebol Profissional",
+      "descricao": "Bola oficial de futebol campo tamanho 5",
+      "preco": "R$ 89,90",
+      "precoOriginal": "R$ 129,90",
+      "desconto": "31%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Bola",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Tênis de Corrida",
+      "descricao": "Tênis esportivo para corrida e caminhada",
+      "preco": "R$ 199,90",
+      "precoOriginal": "R$ 299,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Tenis",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "titulo": "Raquete de Tênis",
+      "descricao": "Raquete profissional com cordas",
+      "preco": "R$ 149,90",
+      "precoOriginal": "R$ 249,90",
+      "desconto": "40%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Raquete",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Bicicleta Ergométrica",
+      "descricao": "Bicicleta indoor para exercícios",
+      "preco": "R$ 899,90",
+      "precoOriginal": "R$ 1.299,90",
+      "desconto": "31%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Bicicleta",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Luvas de Boxe",
+      "descricao": "Luvas profissionais para boxe e MMA",
+      "preco": "R$ 79,90",
+      "precoOriginal": "R$ 119,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Luvas",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Esteira Elétrica",
+      "descricao": "Esteira compacta para casa",
+      "preco": "R$ 1.299,90",
+      "precoOriginal": "R$ 1.899,90",
+      "desconto": "32%",
+      "imagem": "https://via.placeholder.com/200x200/4CAF50/ffffff?text=Esteira",
+      "link": "#"
+    }
+  ]
+}

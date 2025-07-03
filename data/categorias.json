@@ -1,0 +1,53 @@
+{
+  "categorias": [
+    {
+      "id": "cozinha",
+      "nome": "Cozinha",
+      "icone": "🍳",
+      "cor": "#FF6B6B",
+      "arquivo": "cozinha.json",
+      "descricao": "Utensílios e eletrodomésticos para cozinha"
+    },
+    {
+      "id": "eletronicos",
+      "nome": "Eletrônicos",
+      "icone": "📱",
+      "cor": "#4ECDC4",
+      "arquivo": "eletronicos.json",
+      "descricao": "Smartphones, notebooks e gadgets"
+    },
+    {
+      "id": "infantil",
+      "nome": "Infantil",
+      "icone": "🧸",
+      "cor": "#FFE66D",
+      "arquivo": "infantil.json",
+      "descricao": "Brinquedos e produtos para crianças"
+    },
+    {
+      "id": "maquiagem",
+      "nome": "Maquiagem",
+      "icone": "💄",
+      "cor": "#FF69B4",
+      "arquivo": "maquiagem.json",
+      "descricao": "Produtos de beleza e maquiagem"
+    },
+    {
+      "id": "esportes",
+      "nome": "Esportes",
+      "icone": "⚽",
+      "cor": "#4CAF50",
+      "arquivo": "esportes.json",
+      "descricao": "Equipamentos e acessórios esportivos"
+    },
+    {
+      "id": "categoria_1751167169520",
+      "nome": "Moda",
+      "icone": "",
+      "imagem": "/data/categorias_img/1751167169537-LS20250628004630.png",
+      "cor": "#fffafa",
+      "descricao": "descrição da categoria",
+      "arquivo": "categoria_1751167169520.json"
+    }
+  ]
+}

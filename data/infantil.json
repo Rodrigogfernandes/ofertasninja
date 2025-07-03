@@ -1,0 +1,67 @@
+{
+  "categoria": "Infantil",
+  "icone": "🧸",
+  "cor": "#FFE66D",
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Boneca Barbie",
+      "descricao": "Barbie Fashionista com acessórios",
+      "preco": "R$ 49,90",
+      "precoOriginal": "R$ 79,90",
+      "desconto": "38%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Barbie",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Carrinho Controle",
+      "descricao": "Carrinho de controle remoto",
+      "preco": "R$ 89,90",
+      "precoOriginal": "R$ 129,90",
+      "desconto": "31%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Carrinho",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "titulo": "Jogo de Tabuleiro",
+      "descricao": "Monopoly Junior",
+      "preco": "R$ 39,90",
+      "precoOriginal": "R$ 59,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Jogo",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Legos Duplo",
+      "descricao": "Kit 100 peças para crianças",
+      "preco": "R$ 69,90",
+      "precoOriginal": "R$ 99,90",
+      "desconto": "30%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Legos",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Bicicleta Infantil",
+      "descricao": "Bicicleta 12\" com rodinhas",
+      "preco": "R$ 199,90",
+      "precoOriginal": "R$ 299,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Bicicleta",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Mochila Escolar",
+      "descricao": "Mochila com estampa de super-herói",
+      "preco": "R$ 59,90",
+      "precoOriginal": "R$ 89,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/FFE66D/ffffff?text=Mochila",
+      "link": "#"
+    }
+  ]
+}

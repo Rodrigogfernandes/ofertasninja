@@ -1,0 +1,67 @@
+{
+  "categoria": "Eletrônicos",
+  "icone": "📱",
+  "cor": "#4ECDC4",
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Smartphone Galaxy",
+      "descricao": "Samsung Galaxy A54 128GB",
+      "preco": "R$ 1.299,90",
+      "precoOriginal": "R$ 1.599,90",
+      "desconto": "19%",
+      "imagem": "https://via.placeholder.com/200x200/4ECDC4/ffffff?text=Smartphone",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Notebook Dell",
+      "descricao": "Dell Inspiron 15 8GB RAM",
+      "preco": "R$ 2.499,90",
+      "precoOriginal": "R$ 3.199,90",
+      "desconto": "22%",
+      "imagem": "https://via.placeholder.com/200x200/4ECDC4/ffffff?text=Notebook",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "titulo": "Fone Bluetooth",
+      "descricao": "Fone sem fio com cancelamento de ruído",
+      "preco": "R$ 199,90",
+      "precoOriginal": "R$ 299,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/4ECDC4/ffffff?text=Fone",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Smart TV 55\"",
+      "descricao": "TV 4K com Android TV",
+      "preco": "R$ 1.899,90",
+      "precoOriginal": "R$ 2.399,90",
+      "desconto": "21%",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m20zbw32gz8f16@resize_w900_nl.webp",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Tablet Samsung",
+      "descricao": "Galaxy Tab A8 10.5\" 64GB",
+      "preco": "R$ 899,90",
+      "precoOriginal": "R$ 1.199,90",
+      "desconto": "25%",
+      "imagem": "https://via.placeholder.com/200x200/4ECDC4/ffffff?text=Tablet",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Console PlayStation",
+      "descricao": "PS5 Digital Edition",
+      "preco": "R$ 3.299,90",
+      "precoOriginal": "R$ 3.999,90",
+      "desconto": "17%",
+      "imagem": "https://via.placeholder.com/200x200/4ECDC4/ffffff?text=PS5",
+      "link": "#"
+    }
+  ]
+}

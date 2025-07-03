@@ -1,0 +1,67 @@
+{
+  "categoria": "Cozinha",
+  "icone": "🍳",
+  "cor": "#FF6B6B",
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Panela de Pressão",
+      "descricao": "Panela de pressão elétrica 6L",
+      "preco": "R$ 199,90",
+      "precoOriginal": "R$ 299,90",
+      "imagem": "https://down-zl-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkr-m7c6s0o0gd3ea5.16000081741950784.mp4",
+      "link": "https://shopee.com.br/Tela-IPS-secundaria-monitoramento-PC-notebook-i.296397701.23993103288",
+      "desconto": "33%"
+    },
+    {
+      "id": 2,
+      "titulo": "Mixer Profissional",
+      "descricao": "Mixer 2 em 1 com processador",
+      "preco": "R$ 89,90",
+      "precoOriginal": "R$ 129,90",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84m5543mi299b.webp",
+      "link": "https://shopee.com.br/Mini-Misturador-Batedor-Mixer-El%C3%A9trico-Para-Claras-de-Ovos-Leite-Caf%C3%A9-Clara-de-Ovo-para-Cozinha-Dom%C3%A9stica-i.1173558001.20399257823?sp_atk=8aa1a8f8-f07f-4b8e-a24f-06e8ebd7f715&xptdk=8aa1a8f8-f07f-4b8e-a24f-06e8ebd7f715",
+      "desconto": "31%"
+    },
+    {
+      "id": 3,
+      "titulo": "Jogo de Facas",
+      "descricao": "Kit 6 facas profissionais",
+      "preco": "R$ 149,90",
+      "precoOriginal": "R$ 249,90",
+      "desconto": "40%",
+      "imagem": "https://via.placeholder.com/200x200/FF6B6B/ffffff?text=Facas",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Air Fryer",
+      "descricao": "Fritadeira elétrica 4L digital",
+      "preco": "R$ 299,90",
+      "precoOriginal": "R$ 399,90",
+      "desconto": "25%",
+      "imagem": "https://via.placeholder.com/200x200/FF6B6B/ffffff?text=AirFryer",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Liquidificador",
+      "descricao": "Liquidificador 1000W com 6 velocidades",
+      "preco": "R$ 129,90",
+      "precoOriginal": "R$ 179,90",
+      "desconto": "28%",
+      "imagem": "https://via.placeholder.com/200x200/FF6B6B/ffffff?text=Liquidificador",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Jogo de Panelas",
+      "descricao": "Kit 5 peças antiaderente",
+      "preco": "R$ 199,90",
+      "precoOriginal": "R$ 299,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/FF6B6B/ffffff?text=Panelas",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - OfertasNinja_jp</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="icon" href="/src/favcon/favcom.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="loginContainer" class="login-container">
+        <form id="loginForm" class="login-form">
+            <h2>Painel de Controle - Login</h2>
+            <div class="form-group">
+                <label for="loginUser">Usuário</label>
+                <input type="text" id="loginUser" name="user" required autocomplete="username">
+            </div>
+            <div class="form-group">
+                <label for="loginPass">Senha</label>
+                <input type="password" id="loginPass" name="pass" required autocomplete="current-password">
+            </div>
+            <button type="submit" class="btn-primary">Entrar</button>
+            <div id="loginError" class="login-error" style="display:none;"></div>
+        </form>
+    </div>
+    <div id="painelConteudo" style="display:none;">
+        <div class="admin-container">
+            <!-- Header do Painel -->
+            <header class="admin-header">
+                <div class="header-content">
+                    <h1 class="admin-title">
+                        <i class="fas fa-cog"></i>
+                        Painel de Controle
+                    </h1>
+                    <div class="header-actions">
+                        <a href="index.html" class="btn-secondary" id="btnVoltarSite" style="margin-right: 10px;">Voltar ao site</a>
+                        <button id="btnLogout" class="btn-secondary">Sair</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navegação -->
+            <nav class="admin-nav">
+                <button class="nav-tab active" data-tab="categorias">
+                    <i class="fas fa-tags"></i>
+                    Categorias
+                </button>
+                <button class="nav-tab" data-tab="produtos">
+                    <i class="fas fa-box"></i>
+                    Produtos
+                </button>
+                <button class="nav-tab" data-tab="configuracoes">
+                    <i class="fas fa-cogs"></i>
+                    Configurações
+                </button>
+            </nav>
+
+            <!-- Conteúdo Principal -->
+            <main class="admin-content">
+                <!-- Aba Categorias -->
+                <div class="tab-content active" id="categorias-tab">
+                    <div class="content-header">
+                        <h2>Gerenciar Categorias</h2>
+                        <button class="btn-primary" id="addCategoriaBtn">
+                            <i class="fas fa-plus"></i>
+                            Nova Categoria
+                        </button>
+                    </div>
+
+                    <div class="categorias-grid" id="categoriasGrid">
+                        <!-- Categorias serão carregadas dinamicamente -->
+                    </div>
+                </div>
+
+                <!-- Aba Produtos -->
+                <div class="tab-content" id="produtos-tab">
+                    <div class="section-header">
+                        <h2>Gerenciar Produtos</h2>
+                        <button id="addProdutoBtn" class="btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Adicionar Produto
+                        </button>
+                    </div>
+                    
+                    <div class="filter-container">
+                        <label for="categoriaFilter">Filtrar por Categoria:</label>
+                        <select id="categoriaFilter">
+                            <option value="">Todas as Categorias</option>
+                        </select>
+                    </div>
+
+                    <div class="produtos-grid" id="produtosGrid">
+                        <!-- Produtos serão carregados dinamicamente -->
+                    </div>
+                </div>
+
+                <!-- Aba Configurações -->
+                <div class="tab-content" id="configuracoes-tab">
+                    <div class="content-header">
+                        <h2>Configurações do Sistema</h2>
+                    </div>
+
+                    <div class="configuracoes-content">
+                        <div class="login-config-box">
+                            <h3>Configurações do Site</h3>
+                            <form id="editSiteConfigForm" class="edit-site-config-form">
+                                <div class="form-group">
+                                    <label for="siteTitle">Título do Site</label>
+                                    <input type="text" id="siteTitle" name="siteTitle" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="avatarUpload">Avatar (upload)</label>
+                                    <input type="file" id="avatarUpload" name="avatarUpload" accept="image/*">
+                                    <small>Formatos aceitos: PNG, JPG, JPEG. Tamanho recomendado: 200x200px</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="avatarLink">Avatar (link)</label>
+                                    <input type="url" id="avatarLink" name="avatarLink" placeholder="https://exemplo.com/avatar.png">
+                                    <small>Você pode enviar uma imagem ou informar um link. Se ambos forem preenchidos, o upload será priorizado.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="faviconUpload">Favicon (upload)</label>
+                                    <input type="file" id="faviconUpload" name="faviconUpload" accept="image/*">
+                                    <small>Formatos aceitos: PNG, ICO. Tamanho recomendado: 32x32px</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="faviconLink">Favicon (link)</label>
+                                    <input type="url" id="faviconLink" name="faviconLink" placeholder="https://exemplo.com/favicon.png">
+                                    <small>Você pode enviar uma imagem ou informar um link. Se ambos forem preenchidos, o upload será priorizado.</small>
+                                </div>
+                                <button type="submit" class="btn-primary">Salvar Configurações</button>
+                                <div id="siteConfigMsg" class="login-config-msg" style="display:none;"></div>
+                            </form>
+                        </div>
+                        <div class="login-config-box">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links-config">
+                                <div class="social-link-item">
+                                    <label for="instagramLink">Instagram</label>
+                                    <input type="url" id="instagramLink" name="instagramLink" placeholder="https://instagram.com/seu_perfil">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="instagram">Remover</button>
+                                </div>
+                                <div class="social-link-item">
+                                    <label for="twitterLink">Twitter</label>
+                                    <input type="url" id="twitterLink" name="twitterLink" placeholder="https://twitter.com/seu_perfil">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="twitter">Remover</button>
+                                </div>
+                                <div class="social-link-item">
+                                    <label for="facebookLink">Facebook</label>
+                                    <input type="url" id="facebookLink" name="facebookLink" placeholder="https://facebook.com/seu_perfil">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="facebook">Remover</button>
+                                </div>
+                                <div class="social-link-item">
+                                    <label for="youtubeLink">YouTube</label>
+                                    <input type="url" id="youtubeLink" name="youtubeLink" placeholder="https://youtube.com/seu_canal">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="youtube">Remover</button>
+                                </div>
+                                <div class="social-link-item">
+                                    <label for="tiktokLink">TikTok</label>
+                                    <input type="url" id="tiktokLink" name="tiktokLink" placeholder="https://tiktok.com/@seu_perfil">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="tiktok">Remover</button>
+                                </div>
+                                <div class="social-link-item">
+                                    <label for="linkedinLink">LinkedIn</label>
+                                    <input type="url" id="linkedinLink" name="linkedinLink" placeholder="https://linkedin.com/in/seu_perfil">
+                                    <button type="button" class="btn-secondary btn-remove-social" data-social="linkedin">Remover</button>
+                                </div>
+                                <button type="button" class="btn-primary" id="saveSocialLinks">Salvar Redes Sociais</button>
+                                <div id="socialConfigMsg" class="login-config-msg" style="display:none;"></div>
+                            </div>
+                        </div>
+                        <div class="login-config-box">
+                            <h3>Editar Login do Painel</h3>
+                            <form id="editLoginForm" class="edit-login-form">
+                                <div class="form-group">
+                                    <label for="novoUsuario">Novo Usuário</label>
+                                    <input type="text" id="novoUsuario" name="novoUsuario" required autocomplete="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="novaSenha">Nova Senha</label>
+                                    <input type="password" id="novaSenha" name="novaSenha" required autocomplete="new-password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmarSenha">Confirmar Nova Senha</label>
+                                    <input type="password" id="confirmarSenha" name="confirmarSenha" required autocomplete="new-password">
+                                </div>
+                                <button type="submit" class="btn-primary">Salvar Login</button>
+                                <div id="loginConfigMsg" class="login-config-msg" style="display:none;"></div>
+                            </form>
+                        </div>
+                        <div class="login-config-box">
+                            <h3>Editar Tema da Página Principal</h3>
+                            <form id="editThemeForm" class="edit-theme-form">
+                                <div class="form-group">
+                                    <label for="temaPrincipal">Tema</label>
+                                    <select id="temaPrincipal" name="temaPrincipal">
+                                        <option value="dark">Escuro</option>
+                                        <option value="light">Claro</option>
+                                        <option value="rosa-claro">Rosa Claro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-primary">Salvar Tema</button>
+                                <div id="themeConfigMsg" class="login-config-msg" style="display:none;"></div>
+                            </form>
+                        </div>
+                        <div class="config-card">
+                            <h3>Backup e Restauração</h3>
+                            <div class="config-actions">
+                                <button class="btn-secondary" id="exportarBtn">
+                                    <i class="fas fa-download"></i>
+                                    Exportar Dados
+                                </button>
+                                <button class="btn-secondary" id="importarBtn">
+                                    <i class="fas fa-upload"></i>
+                                    Importar Dados
+                                </button>
+                            </div>
+                        </div>
+                        <div class="config-card">
+                            <h3>Manutenção</h3>
+                            <div class="config-actions">
+                                <button class="btn-warning" id="limparCacheBtn">
+                                    <i class="fas fa-broom"></i>
+                                    Limpar Cache
+                                </button>
+                                <button class="btn-danger" id="resetarBtn">
+                                    <i class="fas fa-trash"></i>
+                                    Resetar Dados
+                                </button>
+                                <button class="btn-danger" id="resetarConfigBtn">
+                                    <i class="fas fa-sync-alt"></i>
+                                    Resetar Configurações de Fábrica
+                                </button>
+                            </div>
+                            <div class="config-info-box" style="margin-top:10px; background:rgba(255,255,255,0.05); border-radius:8px; padding:10px; color:#b0b0b0; font-size:0.98rem;">
+                                <b>Limpar Cache:</b> Remove arquivos temporários e dados salvos localmente no navegador (cache e localStorage), garantindo que o site carregue sempre a versão mais atual. Não afeta dados do servidor, categorias, produtos ou configurações.<br>
+                                <b>Resetar Dados:</b> Remove todas as categorias e produtos, mas mantém as configurações do site.<br>
+                                <b>Resetar Configurações de Fábrica:</b> Restaura título, avatar, favicon, redes sociais e tema para os valores originais, sem afetar categorias e produtos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Modal de Categoria -->
+        <div id="categoriaModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="categoriaModalTitle" class="modal-title">Nova Categoria</h3>
+                    <button id="closeCategoriaModal" class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="categoriaForm">
+                        <div class="form-group">
+                            <label for="categoriaNome">Nome da Categoria</label>
+                            <input type="text" name="nome" id="categoriaNome" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="categoriaIcone">Ícone (emoji, classe CSS ou deixe em branco se for usar imagem)</label>
+                                <input type="text" name="icone" id="categoriaIcone" placeholder=" ou fas fa-utensils">
+                            </div>
+                            <div class="form-group">
+                                <label for="categoriaImagem">Imagem da Categoria (upload ou link)</label>
+                                <input type="file" name="imagemUpload" id="categoriaImagem" accept="image/*">
+                                <input type="url" name="imagemLink" id="categoriaImagemLink" placeholder="https://exemplo.com/imagem.jpg" style="margin-top:8px;">
+                                <small>Você pode enviar uma imagem ou informar um link. Se ambos forem preenchidos, o upload será priorizado.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="categoriaCor">Cor</label>
+                                <input type="color" name="cor" id="categoriaCor" value="#FF6B6B" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoriaDescricao">Descrição</label>
+                            <textarea name="descricao" id="categoriaDescricao" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancelarCategoria" class="btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn-primary">Salvar Categoria</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Produto -->
+        <div id="produtoModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="produtoModalTitle" class="modal-title">Novo Produto</h3>
+                    <button id="closeProdutoModal" class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="produtoForm">
+                        <div class="form-group">
+                            <label for="produtoCategoria">Categoria</label>
+                            <select name="categoria" id="produtoCategoria" required>
+                                <option value="">Selecione uma categoria</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoTitulo">Título do Produto</label>
+                            <input type="text" name="titulo" id="produtoTitulo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoDescricao">Descrição</label>
+                            <textarea name="descricao" id="produtoDescricao" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="produtoPreco">Preço Atual</label>
+                                <input type="text" name="preco" id="produtoPreco" placeholder="R$ 99,90" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="produtoPrecoOriginal">Preço Original</label>
+                                <input type="text" name="precoOriginal" id="produtoPrecoOriginal" placeholder="R$ 199,90" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoImagem">URL da Imagem ou Vídeo</label>
+                            <input type="url" name="imagem" id="produtoImagem" placeholder="https://exemplo.com/midia.jpg ou https://exemplo.com/video.mp4" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoLink">Link do Produto</label>
+                            <input type="url" name="link" id="produtoLink" placeholder="https://exemplo.com/produto" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancelarProduto" class="btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn-primary">Salvar Produto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Confirmação -->
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="confirmModalTitle" class="modal-title">Confirmar Ação</h3>
+                    <button id="closeConfirmModal" class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmModalMessage">Tem certeza que deseja realizar esta ação?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelarConfirmacao" class="btn-secondary">Cancelar</button>
+                    <button id="confirmarAcao" class="btn-danger">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input para importar arquivo -->
+        <input type="file" id="importFile" accept=".json" style="display: none;">
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html> 

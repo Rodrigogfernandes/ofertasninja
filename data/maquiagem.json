@@ -1,0 +1,67 @@
+{
+  "categoria": "Maquiagem",
+  "icone": "💄",
+  "cor": "#FF69B4",
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Paleta de Sombras",
+      "descricao": "Paleta 18 cores matte e glitter",
+      "preco": "R$ 79,90",
+      "precoOriginal": "R$ 129,90",
+      "desconto": "38%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Paleta",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Base Liquida",
+      "descricao": "Base de alta cobertura 30ml",
+      "preco": "R$ 49,90",
+      "precoOriginal": "R$ 79,90",
+      "desconto": "38%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Base",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "titulo": "Batom Matte",
+      "descricao": "Batom matte longa duração",
+      "preco": "R$ 29,90",
+      "precoOriginal": "R$ 49,90",
+      "desconto": "40%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Batom",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Máscara de Cílios",
+      "descricao": "Máscara volumosa e alongadora",
+      "preco": "R$ 39,90",
+      "precoOriginal": "R$ 59,90",
+      "desconto": "33%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Mascara",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Pincéis Profissionais",
+      "descricao": "Kit 12 pincéis para maquiagem",
+      "preco": "R$ 89,90",
+      "precoOriginal": "R$ 139,90",
+      "desconto": "36%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Pinceis",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Corretivo",
+      "descricao": "Corretivo cremoso alta cobertura",
+      "preco": "R$ 24,90",
+      "precoOriginal": "R$ 39,90",
+      "desconto": "38%",
+      "imagem": "https://via.placeholder.com/200x200/FF69B4/ffffff?text=Corretivo",
+      "link": "#"
+    }
+  ]
+}

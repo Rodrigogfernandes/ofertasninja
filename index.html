@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfertasNinja_jp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/src/favcon/favcom.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header com Avatar e Título -->
+        <header class="header">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="/src/avatar/IMG_20250627_235555 (1).png" alt="Avatar OfertasNinja_jp" class="avatar-img">
+                    <div class="avatar-glow"></div>
+                </div>
+            </div>
+            <h1 class="title"></h1>
+            <div class="title-underline"></div>
+            <div class="admin-link">
+                <!-- Botão removido -->
+            </div>
+            <!-- <div class="theme-switcher-container">
+                <button id="themeSwitcher" class="theme-switcher" title="Trocar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div> -->
+        </header>
+
+        <!-- Carrossel de Categorias -->
+        <div class="carrousel-container">
+            <div class="carrousel" id="categoriasCarousel">
+                <!-- Categorias serão carregadas dinamicamente -->
+            </div>
+        </div>
+
+        <!-- Botão Voltar -->
+        <div class="back-button-container" id="backButtonContainer" style="display: none;">
+            <button class="back-button" id="backButton">
+                <i class="fas fa-arrow-left"></i>
+                Voltar às Categorias
+            </button>
+        </div>
+
+        <!-- Título da Categoria Atual -->
+        <div class="category-title-container" id="categoryTitleContainer" style="display: none;">
+            <h2 class="category-title" id="categoryTitle"></h2>
+            <div class="category-underline"></div>
+        </div>
+
+        <!-- Grid de Produtos -->
+        <main class="links-grid" id="productsGrid">
+            <!-- Produtos serão carregados dinamicamente -->
+        </main>
+
+        <!-- Modal de Produto -->
+        <div class="modal" id="productModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+                <div class="modal-body" id="modalBody">
+                    <!-- Conteúdo do modal será carregado dinamicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Rodrigo G Fernandes - Todos os direitos reservados</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ofertasninja_jp/" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Partículas de fundo -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
